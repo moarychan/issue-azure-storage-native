@@ -1,0 +1,446 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.example:issue-azure-storage-native >---------------
+[INFO] Building issue-azure-storage-native 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ issue-azure-storage-native ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ issue-azure-storage-native ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ issue-azure-storage-native ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to D:\java\issue-azure-storage-native\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ issue-azure-storage-native ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory D:\java\issue-azure-storage-native\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ issue-azure-storage-native ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to D:\java\issue-azure-storage-native\target\test-classes
+[INFO] 
+[INFO] --- spring-aot-maven-plugin:0.11.4:test-generate (test-generate) @ issue-azure-storage-native ---
+[INFO] Skip Spring AOT test generation since tests are skipped
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ issue-azure-storage-native ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- native-maven-plugin:0.9.11:test (test-native) @ issue-azure-storage-native ---
+[INFO] Skipping native-image tests (parameter 'skipTests' or 'skipNativeTests' is true).
+[INFO] 
+[INFO] --- spring-aot-maven-plugin:0.11.4:generate (generate) @ issue-azure-storage-native ---
+2022-08-04 12:27:30.670  INFO 9396 --- [           main] o.s.a.build.ContextBootstrapContributor  : Detected application class: com.example.issue.azurestoragenative.IssueAzureStorageNativeApplication
+2022-08-04 12:27:30.676  INFO 9396 --- [           main] o.s.a.build.ContextBootstrapContributor  : Processing application context
+2022-08-04 12:27:34.419  INFO 9396 --- [           main] o.s.a.build.ContextBootstrapContributor  : Processed 158 bean definitions in 3738ms
+2022-08-04 12:27:34.739  INFO 9396 --- [           main] o.s.nativex.support.SpringAnalyzer       : Spring Native operating mode: native
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 37 source files to D:\java\issue-azure-storage-native\target\classes
+[INFO] /D:/java/issue-azure-storage-native/target/generated-runtime-sources/spring-aot/src/main/java/org/springframework/boot/jdbc/_FactoryProvider.java: Some input files use or override a deprecated API.
+[INFO] /D:/java/issue-azure-storage-native/target/generated-runtime-sources/spring-aot/src/main/java/org/springframework/boot/jdbc/_FactoryProvider.java: Recompile with -Xlint:deprecation for details.
+[INFO] /D:/java/issue-azure-storage-native/target/generated-runtime-sources/spring-aot/src/main/java/org/springframework/aot/StaticSpringFactories.java: D:\java\issue-azure-storage-native\target\generated-runtime-sources\spring-aot\src\main\java\org\springframework\aot\StaticSpringFactories.java uses unchecked or unsafe operations.
+[INFO] /D:/java/issue-azure-storage-native/target/generated-runtime-sources/spring-aot/src/main/java/org/springframework/aot/StaticSpringFactories.java: Recompile with -Xlint:unchecked for details.
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-jar-plugin:3.2.2:jar (default-jar) @ issue-azure-storage-native ---
+[INFO] Building jar: D:\java\issue-azure-storage-native\target\issue-azure-storage-native-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.6.6:repackage (repackage) @ issue-azure-storage-native ---
+[INFO] Attaching repackaged archive D:\java\issue-azure-storage-native\target\issue-azure-storage-native-0.0.1-SNAPSHOT-exec.jar with classifier exec
+[INFO] 
+[INFO] --- native-maven-plugin:0.9.11:build (build-native) @ issue-azure-storage-native ---
+[INFO] ImageClasspath Entry: org.springframework.boot:spring-boot-starter-web:jar:2.6.6:compile (file:///C:/Users/v-shilichen/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.6.6/spring-boot-starter-web-2.6.6.jar)
+[INFO] ImageClasspath Entry: org.springframework.boot:spring-boot-starter:jar:2.6.6:compile (file:///C:/Users/v-shilichen/.m2/repository/org/springframework/boot/spring-boot-starter/2.6.6/spring-boot-starter-2.6.6.jar)
+[INFO] ImageClasspath Entry: org.springframework.boot:spring-boot:jar:2.6.6:compile (file:///C:/Users/v-shilichen/.m2/repository/org/springframework/boot/spring-boot/2.6.6/spring-boot-2.6.6.jar)
+[INFO] ImageClasspath Entry: org.springframework.boot:spring-boot-autoconfigure:jar:2.6.6:compile (file:///C:/Users/v-shilichen/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.6.6/spring-boot-autoconfigure-2.6.6.jar)
+[INFO] ImageClasspath Entry: org.springframework.boot:spring-boot-starter-logging:jar:2.6.6:compile (file:///C:/Users/v-shilichen/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.6.6/spring-boot-starter-logging-2.6.6.jar)
+[INFO] ImageClasspath Entry: ch.qos.logback:logback-classic:jar:1.2.11:compile (file:///C:/Users/v-shilichen/.m2/repository/ch/qos/logback/logback-classic/1.2.11/logback-classic-1.2.11.jar)
+[INFO] ImageClasspath Entry: ch.qos.logback:logback-core:jar:1.2.11:compile (file:///C:/Users/v-shilichen/.m2/repository/ch/qos/logback/logback-core/1.2.11/logback-core-1.2.11.jar)
+[INFO] ImageClasspath Entry: org.apache.logging.log4j:log4j-to-slf4j:jar:2.17.2:compile (file:///C:/Users/v-shilichen/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.17.2/log4j-to-slf4j-2.17.2.jar)
+[INFO] ImageClasspath Entry: org.apache.logging.log4j:log4j-api:jar:2.17.2:compile (file:///C:/Users/v-shilichen/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2.jar)
+[INFO] ImageClasspath Entry: org.slf4j:jul-to-slf4j:jar:1.7.36:compile (file:///C:/Users/v-shilichen/.m2/repository/org/slf4j/jul-to-slf4j/1.7.36/jul-to-slf4j-1.7.36.jar)
+[INFO] ImageClasspath Entry: jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile (file:///C:/Users/v-shilichen/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar)
+[INFO] ImageClasspath Entry: org.yaml:snakeyaml:jar:1.29:compile (file:///C:/Users/v-shilichen/.m2/repository/org/yaml/snakeyaml/1.29/snakeyaml-1.29.jar)
+[INFO] ImageClasspath Entry: org.springframework.boot:spring-boot-starter-json:jar:2.6.6:compile (file:///C:/Users/v-shilichen/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.6.6/spring-boot-starter-json-2.6.6.jar)
+[INFO] ImageClasspath Entry: com.fasterxml.jackson.core:jackson-databind:jar:2.13.2.2:compile (file:///C:/Users/v-shilichen/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2.2/jackson-databind-2.13.2.2.jar)
+[INFO] ImageClasspath Entry: com.fasterxml.jackson.core:jackson-annotations:jar:2.13.2:compile (file:///C:/Users/v-shilichen/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.jar)
+[INFO] ImageClasspath Entry: com.fasterxml.jackson.core:jackson-core:jar:2.13.2:compile (file:///C:/Users/v-shilichen/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.2/jackson-core-2.13.2.jar)
+[INFO] ImageClasspath Entry: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.13.2:compile (file:///C:/Users/v-shilichen/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.13.2/jackson-datatype-jdk8-2.13.2.jar)
+[INFO] ImageClasspath Entry: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.13.2:compile (file:///C:/Users/v-shilichen/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.2/jackson-datatype-jsr310-2.13.2.jar)
+[INFO] ImageClasspath Entry: com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.13.2:compile (file:///C:/Users/v-shilichen/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.13.2/jackson-module-parameter-names-2.13.2.jar)
+[INFO] ImageClasspath Entry: org.springframework.boot:spring-boot-starter-tomcat:jar:2.6.6:compile (file:///C:/Users/v-shilichen/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.6.6/spring-boot-starter-tomcat-2.6.6.jar)
+[INFO] ImageClasspath Entry: org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.60:compile (file:///C:/Users/v-shilichen/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.60/tomcat-embed-core-9.0.60.jar)
+[INFO] ImageClasspath Entry: org.apache.tomcat.embed:tomcat-embed-el:jar:9.0.60:compile (file:///C:/Users/v-shilichen/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.60/tomcat-embed-el-9.0.60.jar)
+[INFO] ImageClasspath Entry: org.apache.tomcat.embed:tomcat-embed-websocket:jar:9.0.60:compile (file:///C:/Users/v-shilichen/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.60/tomcat-embed-websocket-9.0.60.jar)
+[INFO] ImageClasspath Entry: org.springframework:spring-web:jar:5.3.18:compile (file:///C:/Users/v-shilichen/.m2/repository/org/springframework/spring-web/5.3.18/spring-web-5.3.18.jar)
+[INFO] ImageClasspath Entry: org.springframework:spring-beans:jar:5.3.18:compile (file:///C:/Users/v-shilichen/.m2/repository/org/springframework/spring-beans/5.3.18/spring-beans-5.3.18.jar)
+[INFO] ImageClasspath Entry: org.springframework:spring-webmvc:jar:5.3.18:compile (file:///C:/Users/v-shilichen/.m2/repository/org/springframework/spring-webmvc/5.3.18/spring-webmvc-5.3.18.jar)
+[INFO] ImageClasspath Entry: org.springframework:spring-aop:jar:5.3.18:compile (file:///C:/Users/v-shilichen/.m2/repository/org/springframework/spring-aop/5.3.18/spring-aop-5.3.18.jar)
+[INFO] ImageClasspath Entry: org.springframework:spring-context:jar:5.3.18:compile (file:///C:/Users/v-shilichen/.m2/repository/org/springframework/spring-context/5.3.18/spring-context-5.3.18.jar)
+[INFO] ImageClasspath Entry: org.springframework:spring-expression:jar:5.3.18:compile (file:///C:/Users/v-shilichen/.m2/repository/org/springframework/spring-expression/5.3.18/spring-expression-5.3.18.jar)
+[INFO] ImageClasspath Entry: com.azure.spring:spring-cloud-azure-starter-storage-blob:jar:4.1.0:compile (file:///C:/Users/v-shilichen/.m2/repository/com/azure/spring/spring-cloud-azure-starter-storage-blob/4.1.0/spring-cloud-azure-starter-storage-blob-4.1.0.jar)
+[INFO] ImageClasspath Entry: com.azure.spring:spring-cloud-azure-starter:jar:4.1.0:compile (file:///C:/Users/v-shilichen/.m2/repository/com/azure/spring/spring-cloud-azure-starter/4.1.0/spring-cloud-azure-starter-4.1.0.jar)
+[INFO] ImageClasspath Entry: com.azure.spring:spring-cloud-azure-autoconfigure:jar:4.1.0:compile (file:///C:/Users/v-shilichen/.m2/repository/com/azure/spring/spring-cloud-azure-autoconfigure/4.1.0/spring-cloud-azure-autoconfigure-4.1.0.jar)
+[INFO] ImageClasspath Entry: com.azure.spring:spring-cloud-azure-service:jar:4.1.0:compile (file:///C:/Users/v-shilichen/.m2/repository/com/azure/spring/spring-cloud-azure-service/4.1.0/spring-cloud-azure-service-4.1.0.jar)
+[INFO] ImageClasspath Entry: com.azure.spring:spring-cloud-azure-core:jar:4.1.0:compile (file:///C:/Users/v-shilichen/.m2/repository/com/azure/spring/spring-cloud-azure-core/4.1.0/spring-cloud-azure-core-4.1.0.jar)
+[INFO] ImageClasspath Entry: com.azure:azure-identity:jar:1.5.0:compile (file:///C:/Users/v-shilichen/.m2/repository/com/azure/azure-identity/1.5.0/azure-identity-1.5.0.jar)
+[INFO] ImageClasspath Entry: com.microsoft.azure:msal4j:jar:1.11.3:compile (file:///C:/Users/v-shilichen/.m2/repository/com/microsoft/azure/msal4j/1.11.3/msal4j-1.11.3.jar)
+[INFO] ImageClasspath Entry: com.nimbusds:oauth2-oidc-sdk:jar:9.22.1:compile (file:///C:/Users/v-shilichen/.m2/repository/com/nimbusds/oauth2-oidc-sdk/9.22.1/oauth2-oidc-sdk-9.22.1.jar)
+[INFO] ImageClasspath Entry: com.github.stephenc.jcip:jcip-annotations:jar:1.0-1:compile (file:///C:/Users/v-shilichen/.m2/repository/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.jar)
+[INFO] ImageClasspath Entry: com.nimbusds:content-type:jar:2.2:compile (file:///C:/Users/v-shilichen/.m2/repository/com/nimbusds/content-type/2.2/content-type-2.2.jar)
+[INFO] ImageClasspath Entry: com.nimbusds:lang-tag:jar:1.5:compile (file:///C:/Users/v-shilichen/.m2/repository/com/nimbusds/lang-tag/1.5/lang-tag-1.5.jar)
+[INFO] ImageClasspath Entry: com.nimbusds:nimbus-jose-jwt:jar:9.15.2:compile (file:///C:/Users/v-shilichen/.m2/repository/com/nimbusds/nimbus-jose-jwt/9.15.2/nimbus-jose-jwt-9.15.2.jar)
+[INFO] ImageClasspath Entry: com.microsoft.azure:msal4j-persistence-extension:jar:1.1.0:compile (file:///C:/Users/v-shilichen/.m2/repository/com/microsoft/azure/msal4j-persistence-extension/1.1.0/msal4j-persistence-extension-1.1.0.jar)
+[INFO] ImageClasspath Entry: net.java.dev.jna:jna:jar:5.5.0:compile (file:///C:/Users/v-shilichen/.m2/repository/net/java/dev/jna/jna/5.5.0/jna-5.5.0.jar)
+[INFO] ImageClasspath Entry: net.java.dev.jna:jna-platform:jar:5.6.0:compile (file:///C:/Users/v-shilichen/.m2/repository/net/java/dev/jna/jna-platform/5.6.0/jna-platform-5.6.0.jar)
+[INFO] ImageClasspath Entry: com.azure:azure-core-amqp:jar:2.4.2:compile (file:///C:/Users/v-shilichen/.m2/repository/com/azure/azure-core-amqp/2.4.2/azure-core-amqp-2.4.2.jar)
+[INFO] ImageClasspath Entry: com.microsoft.azure:qpid-proton-j-extensions:jar:1.2.4:compile (file:///C:/Users/v-shilichen/.m2/repository/com/microsoft/azure/qpid-proton-j-extensions/1.2.4/qpid-proton-j-extensions-1.2.4.jar)
+[INFO] ImageClasspath Entry: org.apache.qpid:proton-j:jar:0.33.8:compile (file:///C:/Users/v-shilichen/.m2/repository/org/apache/qpid/proton-j/0.33.8/proton-j-0.33.8.jar)
+[INFO] ImageClasspath Entry: com.azure:azure-core-management:jar:1.5.4:compile (file:///C:/Users/v-shilichen/.m2/repository/com/azure/azure-core-management/1.5.4/azure-core-management-1.5.4.jar)
+[INFO] ImageClasspath Entry: jakarta.validation:jakarta.validation-api:jar:2.0.2:compile (file:///C:/Users/v-shilichen/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar)
+[INFO] ImageClasspath Entry: com.azure:azure-storage-blob:jar:12.16.0:compile (file:///C:/Users/v-shilichen/.m2/repository/com/azure/azure-storage-blob/12.16.0/azure-storage-blob-12.16.0.jar)
+[INFO] ImageClasspath Entry: com.azure:azure-core:jar:1.27.0:compile (file:///C:/Users/v-shilichen/.m2/repository/com/azure/azure-core/1.27.0/azure-core-1.27.0.jar)
+[INFO] ImageClasspath Entry: com.fasterxml.jackson.dataformat:jackson-dataformat-xml:jar:2.13.2:compile (file:///C:/Users/v-shilichen/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.13.2/jackson-dataformat-xml-2.13.2.jar)
+[INFO] ImageClasspath Entry: org.codehaus.woodstox:stax2-api:jar:4.2.1:compile (file:///C:/Users/v-shilichen/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.1/stax2-api-4.2.1.jar)
+[INFO] ImageClasspath Entry: com.fasterxml.woodstox:woodstox-core:jar:6.2.7:compile (file:///C:/Users/v-shilichen/.m2/repository/com/fasterxml/woodstox/woodstox-core/6.2.7/woodstox-core-6.2.7.jar)
+[INFO] ImageClasspath Entry: io.projectreactor:reactor-core:jar:3.4.16:compile (file:///C:/Users/v-shilichen/.m2/repository/io/projectreactor/reactor-core/3.4.16/reactor-core-3.4.16.jar)
+[INFO] ImageClasspath Entry: org.reactivestreams:reactive-streams:jar:1.0.3:compile (file:///C:/Users/v-shilichen/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar)
+[INFO] ImageClasspath Entry: io.netty:netty-tcnative-boringssl-static:jar:2.0.51.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.51.Final/netty-tcnative-boringssl-static-2.0.51.Final.jar)
+[INFO] ImageClasspath Entry: io.netty:netty-tcnative-classes:jar:2.0.51.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-tcnative-classes/2.0.51.Final/netty-tcnative-classes-2.0.51.Final.jar)
+[INFO] ImageClasspath Entry: io.netty:netty-tcnative-boringssl-static:jar:linux-x86_64:2.0.51.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.51.Final/netty-tcnative-boringssl-static-2.0.51.Final-linux-x86_64.jar)
+[INFO] ImageClasspath Entry: io.netty:netty-tcnative-boringssl-static:jar:linux-aarch_64:2.0.51.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.51.Final/netty-tcnative-boringssl-static-2.0.51.Final-linux-aarch_64.jar)
+[INFO] ImageClasspath Entry: io.netty:netty-tcnative-boringssl-static:jar:osx-x86_64:2.0.51.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.51.Final/netty-tcnative-boringssl-static-2.0.51.Final-osx-x86_64.jar)
+[INFO] ImageClasspath Entry: io.netty:netty-tcnative-boringssl-static:jar:osx-aarch_64:2.0.51.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.51.Final/netty-tcnative-boringssl-static-2.0.51.Final-osx-aarch_64.jar)
+[INFO] ImageClasspath Entry: io.netty:netty-tcnative-boringssl-static:jar:windows-x86_64:2.0.51.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.51.Final/netty-tcnative-boringssl-static-2.0.51.Final-windows-x86_64.jar)
+[INFO] ImageClasspath Entry: com.azure:azure-core-http-netty:jar:1.11.9:compile (file:///C:/Users/v-shilichen/.m2/repository/com/azure/azure-core-http-netty/1.11.9/azure-core-http-netty-1.11.9.jar)
+[INFO] ImageClasspath Entry: io.projectreactor.netty:reactor-netty-http:jar:1.0.17:compile (file:///C:/Users/v-shilichen/.m2/repository/io/projectreactor/netty/reactor-netty-http/1.0.17/reactor-netty-http-1.0.17.jar)
+[INFO] ImageClasspath Entry: io.netty:netty-resolver-dns:jar:4.1.75.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-resolver-dns/4.1.75.Final/netty-resolver-dns-4.1.75.Final.jar)
+[WARNING] jar:file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-resolver-dns/4.1.75.Final/netty-resolver-dns-4.1.75.Final.jar!/META-INF/native-image/io.netty/resolver-dns/native-image.properties does not match recommended META-INF/native-image/${groupId}/${artifactId}/native-image.properties layout.
+[INFO] ImageClasspath Entry: io.netty:netty-codec-dns:jar:4.1.75.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-codec-dns/4.1.75.Final/netty-codec-dns-4.1.75.Final.jar)
+[INFO] ImageClasspath Entry: io.netty:netty-resolver-dns-native-macos:jar:osx-x86_64:4.1.75.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.75.Final/netty-resolver-dns-native-macos-4.1.75.Final-osx-x86_64.jar)
+[INFO] ImageClasspath Entry: io.netty:netty-resolver-dns-classes-macos:jar:4.1.75.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.75.Final/netty-resolver-dns-classes-macos-4.1.75.Final.jar)
+[INFO] ImageClasspath Entry: io.projectreactor.netty:reactor-netty-core:jar:1.0.17:compile (file:///C:/Users/v-shilichen/.m2/repository/io/projectreactor/netty/reactor-netty-core/1.0.17/reactor-netty-core-1.0.17.jar)
+[INFO] ImageClasspath Entry: com.azure:azure-storage-common:jar:12.15.1:compile (file:///C:/Users/v-shilichen/.m2/repository/com/azure/azure-storage-common/12.15.1/azure-storage-common-12.15.1.jar)
+[INFO] ImageClasspath Entry: com.azure:azure-storage-internal-avro:jar:12.2.1:compile (file:///C:/Users/v-shilichen/.m2/repository/com/azure/azure-storage-internal-avro/12.2.1/azure-storage-internal-avro-12.2.1.jar)
+[INFO] ImageClasspath Entry: org.springframework.experimental:spring-native:jar:0.11.4:compile (file:///C:/Users/v-shilichen/.m2/repository/org/springframework/experimental/spring-native/0.11.4/spring-native-0.11.4.jar)
+[INFO] ImageClasspath Entry: com.azure.spring:spring-cloud-azure-native-configuration:jar:4.0.0-beta.1:compile (file:///C:/Users/v-shilichen/.m2/repository/com/azure/spring/spring-cloud-azure-native-configuration/4.0.0-beta.1/spring-cloud-azure-native-configuration-4.0.0-beta.1.jar)
+[INFO] ImageClasspath Entry: org.springframework.experimental:spring-aot:jar:0.11.4:compile (file:///C:/Users/v-shilichen/.m2/repository/org/springframework/experimental/spring-aot/0.11.4/spring-aot-0.11.4.jar)
+[INFO] ImageClasspath Entry: org.springframework.boot:spring-boot-loader-tools:jar:2.6.6:compile (file:///C:/Users/v-shilichen/.m2/repository/org/springframework/boot/spring-boot-loader-tools/2.6.6/spring-boot-loader-tools-2.6.6.jar)
+[INFO] ImageClasspath Entry: org.apache.commons:commons-compress:jar:1.21:compile (file:///C:/Users/v-shilichen/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar)
+[INFO] ImageClasspath Entry: com.squareup:javapoet:jar:1.13.0:compile (file:///C:/Users/v-shilichen/.m2/repository/com/squareup/javapoet/1.13.0/javapoet-1.13.0.jar)
+[INFO] ImageClasspath Entry: info.picocli:picocli:jar:4.6.1:compile (file:///C:/Users/v-shilichen/.m2/repository/info/picocli/picocli/4.6.1/picocli-4.6.1.jar)
+[INFO] ImageClasspath Entry: net.bytebuddy:byte-buddy:jar:1.11.22:compile (file:///C:/Users/v-shilichen/.m2/repository/net/bytebuddy/byte-buddy/1.11.22/byte-buddy-1.11.22.jar)
+[INFO] ImageClasspath Entry: com.azure:azure-aot-graalvm-support:jar:1.0.0-beta.2:compile (file:///C:/Users/v-shilichen/.m2/repository/com/azure/azure-aot-graalvm-support/1.0.0-beta.2/azure-aot-graalvm-support-1.0.0-beta.2.jar)
+[WARNING] jar:file:///C:/Users/v-shilichen/.m2/repository/com/azure/azure-aot-graalvm-support/1.0.0-beta.2/azure-aot-graalvm-support-1.0.0-beta.2.jar!/META-INF/native-image/com.azure/native-image.properties does not match recommended META-INF/native-image/${groupId}/${artifactId}/native-image.properties layout.
+[WARNING] jar:file:///C:/Users/v-shilichen/.m2/repository/com/azure/azure-aot-graalvm-support/1.0.0-beta.2/azure-aot-graalvm-support-1.0.0-beta.2.jar!/META-INF/native-image/com.azure/azure-core/native-image.properties does not match recommended META-INF/native-image/${groupId}/${artifactId}/native-image.properties layout.
+[INFO] ImageClasspath Entry: org.graalvm.sdk:graal-sdk:jar:22.0.0.2:compile (file:///C:/Users/v-shilichen/.m2/repository/org/graalvm/sdk/graal-sdk/22.0.0.2/graal-sdk-22.0.0.2.jar)
+[WARNING] jar:file:///C:/Users/v-shilichen/.m2/repository/org/graalvm/sdk/graal-sdk/22.0.0.2/graal-sdk-22.0.0.2.jar!/META-INF/native-image/org.graalvm.polyglot/native-image.properties does not match recommended META-INF/native-image/${groupId}/${artifactId}/native-image.properties layout.
+[WARNING] jar:file:///C:/Users/v-shilichen/.m2/repository/org/graalvm/sdk/graal-sdk/22.0.0.2/graal-sdk-22.0.0.2.jar!/META-INF/native-image/org.graalvm.home/native-image.properties does not match recommended META-INF/native-image/${groupId}/${artifactId}/native-image.properties layout.
+[INFO] ImageClasspath Entry: org.graalvm.nativeimage:svm:jar:22.0.0.2:compile (file:///C:/Users/v-shilichen/.m2/repository/org/graalvm/nativeimage/svm/22.0.0.2/svm-22.0.0.2.jar)
+[INFO] ImageClasspath Entry: org.graalvm.nativeimage:objectfile:jar:22.0.0.2:compile (file:///C:/Users/v-shilichen/.m2/repository/org/graalvm/nativeimage/objectfile/22.0.0.2/objectfile-22.0.0.2.jar)
+[INFO] ImageClasspath Entry: org.graalvm.nativeimage:pointsto:jar:22.0.0.2:compile (file:///C:/Users/v-shilichen/.m2/repository/org/graalvm/nativeimage/pointsto/22.0.0.2/pointsto-22.0.0.2.jar)
+[INFO] ImageClasspath Entry: org.graalvm.compiler:compiler:jar:22.0.0.2:compile (file:///C:/Users/v-shilichen/.m2/repository/org/graalvm/compiler/compiler/22.0.0.2/compiler-22.0.0.2.jar)
+[INFO] ImageClasspath Entry: org.graalvm.truffle:truffle-api:jar:22.0.0.2:compile (file:///C:/Users/v-shilichen/.m2/repository/org/graalvm/truffle/truffle-api/22.0.0.2/truffle-api-22.0.0.2.jar)
+[INFO] ImageClasspath Entry: org.graalvm.nativeimage:native-image-base:jar:22.0.0.2:compile (file:///C:/Users/v-shilichen/.m2/repository/org/graalvm/nativeimage/native-image-base/22.0.0.2/native-image-base-22.0.0.2.jar)
+[INFO] ImageClasspath Entry: com.azure:azure-aot-graalvm-support-netty:jar:1.0.0-beta.2:compile (file:///C:/Users/v-shilichen/.m2/repository/com/azure/azure-aot-graalvm-support-netty/1.0.0-beta.2/azure-aot-graalvm-support-netty-1.0.0-beta.2.jar)
+[WARNING] jar:file:///C:/Users/v-shilichen/.m2/repository/com/azure/azure-aot-graalvm-support-netty/1.0.0-beta.2/azure-aot-graalvm-support-netty-1.0.0-beta.2.jar!/META-INF/native-image/com.azure/azure-core-http-netty/native-image.properties does not match recommended META-INF/native-image/${groupId}/${artifactId}/native-image.properties layout.
+[INFO] ImageClasspath Entry: io.netty:netty-handler:jar:4.1.75.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-handler/4.1.75.Final/netty-handler-4.1.75.Final.jar)
+[WARNING] jar:file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-handler/4.1.75.Final/netty-handler-4.1.75.Final.jar!/META-INF/native-image/io.netty/handler/native-image.properties does not match recommended META-INF/native-image/${groupId}/${artifactId}/native-image.properties layout.
+[INFO] ImageClasspath Entry: io.netty:netty-common:jar:4.1.75.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-common/4.1.75.Final/netty-common-4.1.75.Final.jar)
+[WARNING] jar:file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-common/4.1.75.Final/netty-common-4.1.75.Final.jar!/META-INF/native-image/io.netty/common/native-image.properties does not match recommended META-INF/native-image/${groupId}/${artifactId}/native-image.properties layout.
+[INFO] ImageClasspath Entry: io.netty:netty-resolver:jar:4.1.75.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-resolver/4.1.75.Final/netty-resolver-4.1.75.Final.jar)
+[INFO] ImageClasspath Entry: io.netty:netty-transport:jar:4.1.75.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-transport/4.1.75.Final/netty-transport-4.1.75.Final.jar)
+[WARNING] jar:file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-transport/4.1.75.Final/netty-transport-4.1.75.Final.jar!/META-INF/native-image/io.netty/transport/native-image.properties does not match recommended META-INF/native-image/${groupId}/${artifactId}/native-image.properties layout.
+[INFO] ImageClasspath Entry: io.netty:netty-codec:jar:4.1.75.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-codec/4.1.75.Final/netty-codec-4.1.75.Final.jar)
+[INFO] ImageClasspath Entry: io.netty:netty-handler-proxy:jar:4.1.75.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-handler-proxy/4.1.75.Final/netty-handler-proxy-4.1.75.Final.jar)
+[INFO] ImageClasspath Entry: io.netty:netty-codec-socks:jar:4.1.75.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-codec-socks/4.1.75.Final/netty-codec-socks-4.1.75.Final.jar)
+[INFO] ImageClasspath Entry: io.netty:netty-buffer:jar:4.1.75.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-buffer/4.1.75.Final/netty-buffer-4.1.75.Final.jar)
+[WARNING] jar:file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-buffer/4.1.75.Final/netty-buffer-4.1.75.Final.jar!/META-INF/native-image/io.netty/buffer/native-image.properties does not match recommended META-INF/native-image/${groupId}/${artifactId}/native-image.properties layout.
+[INFO] ImageClasspath Entry: io.netty:netty-codec-http:jar:4.1.75.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-codec-http/4.1.75.Final/netty-codec-http-4.1.75.Final.jar)
+[WARNING] jar:file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-codec-http/4.1.75.Final/netty-codec-http-4.1.75.Final.jar!/META-INF/native-image/io.netty/codec-http/native-image.properties does not match recommended META-INF/native-image/${groupId}/${artifactId}/native-image.properties layout.
+[INFO] ImageClasspath Entry: io.netty:netty-codec-http2:jar:4.1.75.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-codec-http2/4.1.75.Final/netty-codec-http2-4.1.75.Final.jar)
+[WARNING] jar:file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-codec-http2/4.1.75.Final/netty-codec-http2-4.1.75.Final.jar!/META-INF/native-image/io.netty/codec-http2/native-image.properties does not match recommended META-INF/native-image/${groupId}/${artifactId}/native-image.properties layout.
+[INFO] ImageClasspath Entry: io.netty:netty-transport-native-unix-common:jar:4.1.75.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.75.Final/netty-transport-native-unix-common-4.1.75.Final.jar)
+[INFO] ImageClasspath Entry: io.netty:netty-transport-native-epoll:jar:linux-x86_64:4.1.75.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-transport-native-epoll/4.1.75.Final/netty-transport-native-epoll-4.1.75.Final-linux-x86_64.jar)
+[INFO] ImageClasspath Entry: io.netty:netty-transport-classes-epoll:jar:4.1.75.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.75.Final/netty-transport-classes-epoll-4.1.75.Final.jar)
+[INFO] ImageClasspath Entry: io.netty:netty-transport-native-kqueue:jar:osx-x86_64:4.1.75.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.75.Final/netty-transport-native-kqueue-4.1.75.Final-osx-x86_64.jar)
+[INFO] ImageClasspath Entry: io.netty:netty-transport-classes-kqueue:jar:4.1.75.Final:compile (file:///C:/Users/v-shilichen/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.75.Final/netty-transport-classes-kqueue-4.1.75.Final.jar)
+[INFO] ImageClasspath Entry: net.minidev:json-smart:jar:2.4.8:compile (file:///C:/Users/v-shilichen/.m2/repository/net/minidev/json-smart/2.4.8/json-smart-2.4.8.jar)
+[INFO] ImageClasspath Entry: net.minidev:accessors-smart:jar:2.4.8:compile (file:///C:/Users/v-shilichen/.m2/repository/net/minidev/accessors-smart/2.4.8/accessors-smart-2.4.8.jar)
+[INFO] ImageClasspath Entry: org.ow2.asm:asm:jar:9.1:compile (file:///C:/Users/v-shilichen/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar)
+[INFO] ImageClasspath Entry: org.slf4j:slf4j-api:jar:1.7.36:compile (file:///C:/Users/v-shilichen/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar)
+[INFO] ImageClasspath Entry: org.springframework:spring-core:jar:5.3.18:compile (file:///C:/Users/v-shilichen/.m2/repository/org/springframework/spring-core/5.3.18/spring-core-5.3.18.jar)
+[INFO] ImageClasspath Entry: org.springframework:spring-jcl:jar:5.3.18:compile (file:///C:/Users/v-shilichen/.m2/repository/org/springframework/spring-jcl/5.3.18/spring-jcl-5.3.18.jar)
+[INFO] ImageClasspath Entry: com.example:issue-azure-storage-native:jar:0.0.1-SNAPSHOT (file:///D:/java/issue-azure-storage-native/target/issue-azure-storage-native-0.0.1-SNAPSHOT.jar)
+[WARNING] jar:file:///D:/java/issue-azure-storage-native/target/issue-azure-storage-native-0.0.1-SNAPSHOT.jar!/META-INF/native-image/org.springframework.aot/spring-aot/native-image.properties does not match recommended META-INF/native-image/${groupId}/${artifactId}/native-image.properties layout.
+[INFO] Executing: D:\noinstall\graalvm-ce-java11-22.0.0.2\bin\native-image.cmd @C:\Users\V-SHIL~1\AppData\Local\Temp\native-image15010330952505452650args
+========================================================================================================================
+GraalVM Native Image: Generating 'issue-azure-storage-native'...
+========================================================================================================================
+[1/7] Initializing...                                                                                   (18.5s @ 0.42GB)
+12:28:06.711 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+12:28:06.712 [main] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+12:28:06.712 [main] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+12:28:06.712 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+12:28:06.712 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+12:28:06.714 [main] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5175d9ad
+ Version info: 'GraalVM 22.0.0.2 Java 11 CE'
+ 13 user-provided feature(s)
+  - com.azure.aot.graalvm.support.implementation.features.AppConfigFeature
+  - com.azure.aot.graalvm.support.implementation.features.AzureCoreFeature
+  - com.azure.aot.graalvm.support.implementation.features.CosmosFeature
+  - com.azure.aot.graalvm.support.implementation.features.EventHubsFeature
+  - com.azure.aot.graalvm.support.implementation.features.FormRecognizerFeature
+  - com.azure.aot.graalvm.support.implementation.features.IdentityFeature
+  - com.azure.aot.graalvm.support.implementation.features.KeyvaultCertificatesFeature
+  - com.azure.aot.graalvm.support.implementation.features.KeyvaultKeysFeature
+  - com.azure.aot.graalvm.support.implementation.features.KeyvaultSecretsFeature
+  - com.azure.aot.graalvm.support.implementation.features.StorageBlobFeature
+  - com.azure.aot.graalvm.support.implementation.features.StorageFileShareFeature
+  - com.azure.aot.graalvm.support.implementation.features.StorageQueueFeature
+  - com.azure.aot.graalvm.support.implementation.features.TextAnalyticsFeature
+AZURE SDK: Not registering Azure GraalVM support for class com.azure.aot.graalvm.support.implementation.features.StorageFileShareFeature as not all specified classes were found on classpath. Missing classes are:
+  - com.azure.storage.file.share.implementation.DirectoriesImpl$DirectoriesService
+  - com.azure.storage.file.share.implementation.FilesImpl$FilesService
+  - com.azure.storage.file.share.implementation.ServicesImpl$ServicesService
+  - com.azure.storage.file.share.implementation.SharesImpl$SharesService
+AZURE SDK: Not registering Azure GraalVM support for class com.azure.aot.graalvm.support.implementation.features.KeyvaultCertificatesFeature as not all specified classes were found on classpath. Missing classes are:
+  - com.azure.security.keyvault.certificates.CertificateService
+AZURE SDK: Registering Azure GraalVM support for class com.azure.aot.graalvm.support.implementation.features.StorageBlobFeature
+AZURE SDK: Not registering Azure GraalVM support for class com.azure.aot.graalvm.support.implementation.features.StorageQueueFeature as not all specified classes were found on classpath. Missing classes are:
+  - com.azure.storage.queue.implementation.MessageIdsImpl$MessageIdsService
+  - com.azure.storage.queue.implementation.MessagesImpl$MessagesService
+  - com.azure.storage.queue.implementation.QueuesImpl$QueuesService
+  - com.azure.storage.queue.implementation.ServicesImpl$ServicesService
+AZURE SDK: Not registering Azure GraalVM support for class com.azure.aot.graalvm.support.implementation.features.KeyvaultSecretsFeature as not all specified classes were found on classpath. Missing classes are:
+  - com.azure.security.keyvault.secrets.SecretService
+AZURE SDK: Not registering Azure GraalVM support for class com.azure.aot.graalvm.support.implementation.features.TextAnalyticsFeature as not all specified classes were found on classpath. Missing classes are:
+  - com.azure.ai.textanalytics.implementation.TextAnalyticsClientImpl$TextAnalyticsClientService
+AZURE SDK: Registering Azure GraalVM support for class com.azure.aot.graalvm.support.implementation.features.EventHubsFeature
+AZURE SDK: Registering Azure GraalVM support for class com.azure.aot.graalvm.support.implementation.features.CosmosFeature
+AZURE SDK: Not registering Azure GraalVM support for class com.azure.aot.graalvm.support.implementation.features.FormRecognizerFeature as not all specified classes were found on classpath. Missing classes are:
+  - com.azure.ai.formrecognizer.implementation.FormRecognizerClientImpl$FormRecognizerClientService
+AZURE SDK: Registering Azure GraalVM support for class com.azure.aot.graalvm.support.implementation.features.AzureCoreFeature
+AZURE SDK: Registering Azure GraalVM support for class com.azure.aot.graalvm.support.implementation.features.IdentityFeature
+AZURE SDK: Not registering Azure GraalVM support for class com.azure.aot.graalvm.support.implementation.features.AppConfigFeature as not all specified classes were found on classpath. Missing classes are:
+  - com.azure.data.appconfiguration.ConfigurationService
+AZURE SDK: Not registering Azure GraalVM support for class com.azure.aot.graalvm.support.implementation.features.KeyvaultKeysFeature as not all specified classes were found on classpath. Missing classes are:
+  - com.azure.security.keyvault.keys.KeyService
+The bundle named: org.apache.tomcat.util.threads.res.LocalStrings, has not been found. If the bundle is part of a module, verify the bundle name is a fully qualified class name. Otherwise verify the bundle path is accessible in the classpath.
+[2/7] Performing analysis...  [*********]                                                              (161.5s @ 4.36GB)
+Warning: Could not register complete reflection metadata for org.springframework.boot.autoconfigure.jdbc.HikariDriverConfigurationFailureAnalyzer. Reason(s): java.lang.NoClassDefFoundError: org/springframework/jdbc/CannotGetJdbcConnectionException
+Warning: Could not register complete reflection metadata for org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer. Reason(s): java.lang.NoClassDefFoundError: liquibase/exception/ChangeLogParseException
+Warning: Could not register complete reflection metadata for org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator. Reason(s): java.lang.NoClassDefFoundError: org/aspectj/util/PartialOrder$PartialComparable
+Warning: Could not register complete reflection metadata for org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator. Reason(s): java.lang.NoClassDefFoundError: org/aspectj/util/PartialOrder$PartialComparable
+Warning: Could not register complete reflection metadata for com.azure.spring.cloud.autoconfigure.keyvault.environment.KeyVaultEnvironmentPostProcessor. Reason(s): java.lang.NoClassDefFoundError: com/azure/security/keyvault/secrets/SecretClient
+12:28:38.790 [ForkJoinPool-2-worker-13] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+12:28:38.791 [ForkJoinPool-2-worker-13] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 11
+12:28:38.791 [ForkJoinPool-2-worker-13] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+12:28:38.791 [ForkJoinPool-2-worker-13] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+12:28:38.791 [ForkJoinPool-2-worker-13] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+12:28:38.792 [ForkJoinPool-2-worker-13] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+12:28:38.792 [ForkJoinPool-2-worker-13] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+12:28:38.792 [ForkJoinPool-2-worker-13] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): available
+12:28:38.792 [ForkJoinPool-2-worker-13] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+12:28:38.792 [ForkJoinPool-2-worker-13] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+12:28:38.795 [ForkJoinPool-2-worker-13] DEBUG io.netty.util.internal.PlatformDependent - maxDirectMemory: 11992039424 bytes (maybe)
+12:28:38.795 [ForkJoinPool-2-worker-13] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\V-SHIL~1\AppData\Local\Temp (java.io.tmpdir)
+12:28:38.795 [ForkJoinPool-2-worker-13] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+12:28:38.795 [ForkJoinPool-2-worker-13] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+12:28:38.795 [ForkJoinPool-2-worker-13] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 11992039424 bytes
+12:28:38.795 [ForkJoinPool-2-worker-13] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: 1024
+12:28:38.795 [ForkJoinPool-2-worker-13] DEBUG io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+12:28:38.795 [ForkJoinPool-2-worker-13] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+12:28:40.444 [ForkJoinPool-2-worker-7] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@56bb501e
+12:28:48.449 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+12:28:48.449 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+12:28:49.215 [ForkJoinPool-2-worker-15] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+12:28:49.215 [ForkJoinPool-2-worker-15] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+12:28:49.586 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+12:28:49.586 [ForkJoinPool-2-worker-3] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+12:28:55.845 [ForkJoinPool-2-worker-9] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+12:28:55.846 [ForkJoinPool-2-worker-9] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+12:28:55.846 [ForkJoinPool-2-worker-9] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.chunkSize: 32
+12:28:55.846 [ForkJoinPool-2-worker-9] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.blocking: false
+12:28:55.877 [ForkJoinPool-2-worker-9] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+12:28:55.877 [ForkJoinPool-2-worker-9] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+12:29:34.590 [ForkJoinPool-2-worker-13] DEBUG io.netty.util.internal.NativeLibraryLoader - -Dio.netty.native.workdir: C:\Users\V-SHIL~1\AppData\Local\Temp (io.netty.tmpdir)
+12:29:34.591 [ForkJoinPool-2-worker-13] DEBUG io.netty.util.internal.NativeLibraryLoader - -Dio.netty.native.deleteLibAfterLoading: true
+12:29:34.591 [ForkJoinPool-2-worker-13] DEBUG io.netty.util.internal.NativeLibraryLoader - -Dio.netty.native.tryPatchShadedId: true
+12:29:34.591 [ForkJoinPool-2-worker-13] DEBUG io.netty.util.internal.NativeLibraryLoader - -Dio.netty.native.detectNativeLibraryDuplicates: true
+12:29:46.564 [main] DEBUG io.netty.buffer.AdvancedLeakAwareByteBuf - -Dio.netty.leakDetection.acquireAndReleaseOnly: false
+12:29:50.439 [ForkJoinPool-2-worker-7] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
+12:29:50.736 [ForkJoinPool-2-worker-5] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibDecoder: false
+12:29:50.737 [ForkJoinPool-2-worker-5] DEBUG io.netty.handler.codec.compression.ZlibCodecFactory - -Dio.netty.noJdkZlibEncoder: false
+12:29:53.572 [ForkJoinPool-2-worker-11] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+12:30:04.599 [ForkJoinPool-2-worker-15] DEBUG io.netty.resolver.DefaultHostsFileEntriesResolver - -Dio.netty.hostsFileRefreshInterval: 0
+12:30:05.200 [ForkJoinPool-2-worker-3] DEBUG io.netty.handler.ssl.JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+12:30:05.200 [ForkJoinPool-2-worker-3] DEBUG io.netty.handler.ssl.JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+  22,121 (91.76%) of 24,107 classes reachable
+  41,918 (77.11%) of 54,363 fields reachable
+ 133,921 (68.53%) of 195,415 methods reachable
+   1,554 classes, 3,990 fields, and 10,752 methods registered for reflection
+     145 classes,   115 fields, and 1,681 methods registered for JNI access
+
+Warning: Could not resolve com.azure.data.appconfiguration.models.SettingFields for reflection configuration. Reason: java.lang.ClassNotFoundException: com.azure.data.appconfiguration.models.SettingFields.
+Warning: Could not resolve com.azure.data.appconfiguration.models.ConfigurationSetting for reflection configuration. Reason: java.lang.ClassNotFoundException: com.azure.data.appconfiguration.models.ConfigurationSetting.
+Warning: Could not resolve com.azure.data.appconfiguration.implementation.ConfigurationSettingPage for reflection configuration. Reason: java.lang.ClassNotFoundException: com.azure.data.appconfiguration.implementation.ConfigurationSettingPage.
+Warning: Could not resolve com.azure.data.appconfiguration.models.FeatureFlagConfigurationSetting for reflection configuration. Reason: java.lang.ClassNotFoundException: com.azure.data.appconfiguration.models.FeatureFlagConfigurationSetting.
+Warning: Could not resolve com.azure.data.appconfiguration.models.SecretReferenceConfigurationSetting for reflection configuration. Reason: java.lang.ClassNotFoundException: com.azure.data.appconfiguration.models.SecretReferenceConfigurationSetting.
+Warning: Could not resolve com.azure.data.appconfiguration.models.SettingFields for reflection configuration. Reason: java.lang.ClassNotFoundException: com.azure.data.appconfiguration.models.SettingFields.
+Warning: Could not resolve com.azure.data.appconfiguration.ConfigurationClientBuilderTest for reflection configuration. Reason: java.lang.ClassNotFoundException: com.azure.data.appconfiguration.ConfigurationClientBuilderTest.
+Warning: Could not resolve com.azure.data.appconfiguration.models.ConfigurationSetting for reflection configuration. Reason: java.lang.ClassNotFoundException: com.azure.data.appconfiguration.models.ConfigurationSetting.
+Warning: Could not resolve com.azure.data.appconfiguration.implementation.ConfigurationSettingPage for reflection configuration. Reason: java.lang.ClassNotFoundException: com.azure.data.appconfiguration.implementation.ConfigurationSettingPage.
+Warning: Could not resolve com.azure.data.appconfiguration.models.FeatureFlagConfigurationSetting for reflection configuration. Reason: java.lang.ClassNotFoundException: com.azure.data.appconfiguration.models.FeatureFlagConfigurationSetting.
+Warning: Could not resolve com.azure.data.appconfiguration.models.SecretReferenceConfigurationSetting for reflection configuration. Reason: java.lang.ClassNotFoundException: com.azure.data.appconfiguration.models.SecretReferenceConfigurationSetting.
+Warning: Could not register org.springframework.boot.autoconfigure.jdbc.HikariDriverConfigurationFailureAnalyzer: allDeclaredConstructors for reflection. Reason: java.lang.NoClassDefFoundError: org/springframework/jdbc/CannotGetJdbcConnectionException.
+Warning: Could not register org.springframework.boot.liquibase.LiquibaseChangelogMissingFailureAnalyzer: allDeclaredConstructors for reflection. Reason: java.lang.NoClassDefFoundError: liquibase/exception/ChangeLogParseException.
+Error: Error loading a referenced type: java.lang.SecurityException: class "com.azure.spring.cloud.autoconfigure.compatibility.ContextBootstrapInitializer"'s signer information does not match signer information of other classes in the same package
+
+
+Detailed message:
+Trace:
+        at parsing org.springframework.aot.ContextBootstrapInitializer.initialize(ContextBootstrapInitializer.java:255)
+Call path from entry point to org.springframework.aot.ContextBootstrapInitializer.initialize(GenericApplicationContext):
+        at org.springframework.aot.ContextBootstrapInitializer.initialize(ContextBootstrapInitializer.java:119)
+        at org.springframework.aot.ContextBootstrapInitializer.initialize(ContextBootstrapInitializer.java:115)
+        at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:613)
+        at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:381)
+        at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+        at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+        at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+        at com.example.issue.azurestoragenative.IssueAzureStorageNativeApplication.main(IssueAzureStorageNativeApplication.java:10)
+        at com.oracle.svm.core.JavaMainWrapper.runCore(JavaMainWrapper.java:150)
+        at com.oracle.svm.core.JavaMainWrapper.run(JavaMainWrapper.java:186)
+        at com.oracle.svm.core.code.IsolateEnterStub.JavaMainWrapper_run_5087f5482cc9a6abc971913ece43acb471d2631b(generated:0)
+
+com.oracle.svm.core.util.UserError$UserException: Error loading a referenced type: java.lang.SecurityException: class "com.azure.spring.cloud.autoconfigure.compatibility.ContextBootstrapInitializer"'s signer information does not match signer information of other classes in the same package
+Detailed message:
+Trace:
+        at parsing org.springframework.aot.ContextBootstrapInitializer.initialize(ContextBootstrapInitializer.java:255)
+Call path from entry point to org.springframework.aot.ContextBootstrapInitializer.initialize(GenericApplicationContext):
+        at org.springframework.aot.ContextBootstrapInitializer.initialize(ContextBootstrapInitializer.java:119)
+        at org.springframework.aot.ContextBootstrapInitializer.initialize(ContextBootstrapInitializer.java:115)
+        at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:613)
+        at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:381)
+        at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+        at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+        at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+        at com.example.issue.azurestoragenative.IssueAzureStorageNativeApplication.main(IssueAzureStorageNativeApplication.java:10)
+        at com.oracle.svm.core.JavaMainWrapper.runCore(JavaMainWrapper.java:150)
+        at com.oracle.svm.core.JavaMainWrapper.run(JavaMainWrapper.java:186)
+        at com.oracle.svm.core.code.IsolateEnterStub.JavaMainWrapper_run_5087f5482cc9a6abc971913ece43acb471d2631b(generated:0)
+
+        at com.oracle.svm.core.util.UserError.abort(UserError.java:87)
+        at com.oracle.svm.hosted.FallbackFeature.reportAsFallback(FallbackFeature.java:233)
+        at com.oracle.svm.hosted.NativeImageGenerator.runPointsToAnalysis(NativeImageGenerator.java:731)
+        at com.oracle.svm.hosted.NativeImageGenerator.doRun(NativeImageGenerator.java:537)
+        at com.oracle.svm.hosted.NativeImageGenerator.run(NativeImageGenerator.java:494)
+        at com.oracle.svm.hosted.NativeImageGeneratorRunner.buildImage(NativeImageGeneratorRunner.java:426)
+        at com.oracle.svm.hosted.NativeImageGeneratorRunner.build(NativeImageGeneratorRunner.java:587)
+        at com.oracle.svm.hosted.NativeImageGeneratorRunner.main(NativeImageGeneratorRunner.java:126)
+        at com.oracle.svm.hosted.NativeImageGeneratorRunner$JDK9Plus.main(NativeImageGeneratorRunner.java:617)
+Caused by: com.oracle.graal.pointsto.constraints.UnsupportedFeatureException: Error loading a referenced type: java.lang.SecurityException: class "com.azure.spring.cloud.autoconfigure.compatibility.ContextBootstrapInitializer"'s signer information does not match signer information of other classes in the same package
+Detailed message:
+Trace:
+        at parsing org.springframework.aot.ContextBootstrapInitializer.initialize(ContextBootstrapInitializer.java:255)
+Call path from entry point to org.springframework.aot.ContextBootstrapInitializer.initialize(GenericApplicationContext):
+        at org.springframework.aot.ContextBootstrapInitializer.initialize(ContextBootstrapInitializer.java:119)
+        at org.springframework.aot.ContextBootstrapInitializer.initialize(ContextBootstrapInitializer.java:115)
+        at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:613)
+        at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:381)
+        at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+        at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+        at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+        at com.example.issue.azurestoragenative.IssueAzureStorageNativeApplication.main(IssueAzureStorageNativeApplication.java:10)
+        at com.oracle.svm.core.JavaMainWrapper.runCore(JavaMainWrapper.java:150)
+        at com.oracle.svm.core.JavaMainWrapper.run(JavaMainWrapper.java:186)
+        at com.oracle.svm.core.code.IsolateEnterStub.JavaMainWrapper_run_5087f5482cc9a6abc971913ece43acb471d2631b(generated:0)
+
+        at com.oracle.graal.pointsto.constraints.UnsupportedFeatures.report(UnsupportedFeatures.java:126)
+        at com.oracle.svm.hosted.NativeImageGenerator.runPointsToAnalysis(NativeImageGenerator.java:728)
+        ... 6 more
+Caused by: java.lang.SecurityException: class "com.azure.spring.cloud.autoconfigure.compatibility.ContextBootstrapInitializer"'s signer information does not match signer information of other classes in the same package
+        at java.base/java.lang.ClassLoader.checkCerts(ClassLoader.java:1151)
+        at java.base/java.lang.ClassLoader.preDefineClass(ClassLoader.java:906)
+        at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1015)
+        at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
+        at java.base/java.net.URLClassLoader.defineClass(URLClassLoader.java:555)
+        at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:458)
+        at java.base/java.net.URLClassLoader$1.run(URLClassLoader.java:452)
+        at java.base/java.security.AccessController.doPrivileged(Native Method)
+        at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:451)
+        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:589)
+        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+        at jdk.internal.vm.ci/jdk.vm.ci.hotspot.CompilerToVM.resolveTypeInPool(Native Method)
+        at jdk.internal.vm.ci/jdk.vm.ci.hotspot.HotSpotConstantPool.loadReferencedType(HotSpotConstantPool.java:773)
+        at java.base/jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+        at com.oracle.graal.pointsto.infrastructure.WrappedConstantPool.loadReferencedType(WrappedConstantPool.java:97)
+        at com.oracle.graal.pointsto.infrastructure.WrappedConstantPool.loadReferencedType(WrappedConstantPool.java:114)
+        at com.oracle.svm.hosted.phases.SubstrateClassInitializationPlugin.loadReferencedType(SubstrateClassInitializationPlugin.java:58)
+        at jdk.internal.vm.compiler/org.graalvm.compiler.java.BytecodeParser.loadReferenceType(BytecodeParser.java:4435)
+        at jdk.internal.vm.compiler/org.graalvm.compiler.java.BytecodeParser.maybeEagerlyResolve(BytecodeParser.java:4417)
+        at com.oracle.svm.hosted.phases.SharedGraphBuilderPhase$SharedBytecodeParser.maybeEagerlyResolve(SharedGraphBuilderPhase.java:154)
+        at jdk.internal.vm.compiler/org.graalvm.compiler.java.BytecodeParser.lookupMethod(BytecodeParser.java:4357)
+        at jdk.internal.vm.compiler/org.graalvm.compiler.java.BytecodeParser.genInvokeStatic(BytecodeParser.java:1647)
+        at jdk.internal.vm.compiler/org.graalvm.compiler.java.BytecodeParser.processBytecode(BytecodeParser.java:5409)
+        at jdk.internal.vm.compiler/org.graalvm.compiler.java.BytecodeParser.iterateBytecodesForBlock(BytecodeParser.java:3513)
+        at jdk.internal.vm.compiler/org.graalvm.compiler.java.BytecodeParser.handleBytecodeBlock(BytecodeParser.java:3473)
+        at jdk.internal.vm.compiler/org.graalvm.compiler.java.BytecodeParser.processBlock(BytecodeParser.java:3318)
+        at jdk.internal.vm.compiler/org.graalvm.compiler.java.BytecodeParser.build(BytecodeParser.java:1149)
+        at jdk.internal.vm.compiler/org.graalvm.compiler.java.BytecodeParser.buildRootMethod(BytecodeParser.java:1041)
+        at jdk.internal.vm.compiler/org.graalvm.compiler.java.GraphBuilderPhase$Instance.run(GraphBuilderPhase.java:84)
+        at com.oracle.svm.hosted.phases.SharedGraphBuilderPhase.run(SharedGraphBuilderPhase.java:80)
+        at jdk.internal.vm.compiler/org.graalvm.compiler.phases.Phase.run(Phase.java:49)
+        at jdk.internal.vm.compiler/org.graalvm.compiler.phases.BasePhase.apply(BasePhase.java:214)
+        at jdk.internal.vm.compiler/org.graalvm.compiler.phases.Phase.apply(Phase.java:42)
+        at jdk.internal.vm.compiler/org.graalvm.compiler.phases.Phase.apply(Phase.java:38)
+        at com.oracle.graal.pointsto.flow.AnalysisParsedGraph.parseBytecode(AnalysisParsedGraph.java:132)
+        at com.oracle.graal.pointsto.meta.AnalysisMethod.ensureGraphParsed(AnalysisMethod.java:556)
+        at com.oracle.graal.pointsto.flow.MethodTypeFlowBuilder.parse(MethodTypeFlowBuilder.java:167)
+        at com.oracle.graal.pointsto.flow.MethodTypeFlowBuilder.apply(MethodTypeFlowBuilder.java:358)
+        at com.oracle.graal.pointsto.flow.MethodTypeFlow.createTypeFlow(MethodTypeFlow.java:297)
+        at com.oracle.graal.pointsto.flow.MethodTypeFlow.ensureTypeFlowCreated(MethodTypeFlow.java:286)
+        at com.oracle.graal.pointsto.flow.MethodTypeFlow.addContext(MethodTypeFlow.java:107)
+        at com.oracle.graal.pointsto.DefaultAnalysisPolicy$DefaultVirtualInvokeTypeFlow.onObservedUpdate(DefaultAnalysisPolicy.java:223)
+        at com.oracle.graal.pointsto.flow.TypeFlow.notifyObservers(TypeFlow.java:487)
+        at com.oracle.graal.pointsto.flow.TypeFlow.update(TypeFlow.java:556)
+        at com.oracle.graal.pointsto.PointsToAnalysis$2.run(PointsToAnalysis.java:598)
+        at com.oracle.graal.pointsto.util.CompletionExecutor.executeCommand(CompletionExecutor.java:195)
+        at com.oracle.graal.pointsto.util.CompletionExecutor.lambda$executeService$0(CompletionExecutor.java:179)
+        at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1426)
+        at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+        at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+        at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+        at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+        at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+
+------------------------------------------------------------------------------------------------------------------------
+                       32.4s (17.9% of total time) in 42 GCs | Peak RSS: 6.97GB | CPU load: 4.12
+------------------------------------------------------------------------------------------------------------------------
+Produced artifacts:
+ D:\java\issue-azure-storage-native\target\issue-azure-storage-native.build_artifacts.txt
+========================================================================================================================
+Failed generating 'issue-azure-storage-native' after 3m 0s.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:42 min
+[INFO] Finished at: 2022-08-04T12:30:51+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.graalvm.buildtools:native-maven-plugin:0.9.11:build (build-native) on project issue-azure-storage-native: Execution of D:\noinstall\graalvm-ce-java11-22.0.0.2\bin\native-image.cmd @C:\Users\V-SHIL~1\AppData\Local\Temp\native-image15010330952505452650args returned non-zero result -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
