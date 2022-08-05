@@ -154,6 +154,8 @@
             <configuration>
               <buildArgs>
                 <buildArg>-H:+ReportExceptionStackTraces</buildArg>
+                <buildArg>--native-image-info</buildArg>
+                <buildArg>--verbose</buildArg>
               </buildArgs>
             </configuration>
 					</plugin>

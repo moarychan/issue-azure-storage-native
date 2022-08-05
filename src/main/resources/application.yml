@@ -1,11 +1,9 @@
 spring:
   cloud:
     azure:
-#      compatibility-verifier:
-#        enabled: false
       storage:
         blob:
-          account-name: ${AZURE_STORAGE_ACCOUNT}
+          account-name: devstoreaccount1
           container-name: blobcontainer
-# Uncomment the account-key when building native image with the Buildpacks.
-#          account-key: <replace-with-your-storage-account-key>
+          account-key: Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==
+          endpoint: http://127.0.0.1:10000/devstoreaccount1

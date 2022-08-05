@@ -11,133 +11,35 @@ You will build an application that use Spring Resource abstraction to read and w
 - [An Azure subscription](https://azure.microsoft.com/free/)
 - [Terraform](https://www.terraform.io/)
 - [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli)
-- [GraalVM 22.0.0 - Java 11](https://www.graalvm.org/downloads/)
-  
-  Windows version link: https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.0.0.2/graalvm-ce-java11-windows-amd64-22.0.0.2.zip
 
 - [Docker](https://docs.docker.com/installation/#installation) for [Buildpacks](https://docs.spring.io/spring-native/docs/0.11.4/reference/htmlsingle/#getting-started-buildpacks-system-requirements) usage
 - [Native Image](https://www.graalvm.org/22.0/reference-manual/native-image/) for [Native Build Tools](https://docs.spring.io/spring-native/docs/0.11.4/reference/htmlsingle/#getting-started-native-image-system-requirements) usage
+
+  [GraalVM 22.0.0 - Java 11](https://www.graalvm.org/downloads/)
+
+  Windows version link: https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.0.0.2/graalvm-ce-java11-windows-amd64-22.0.0.2.zip
+
 - Maven
 - You can also import the code straight into your IDE:
     - [IntelliJ IDEA](https://www.jetbrains.com/idea/download)
 
-## Provision Azure Resources Required to Run This Sample
-This sample will create Azure resources using Terraform. If you choose to run it without using Terraform to provision resources, please pay attention to:
-> [!IMPORTANT]  
-> If you choose to use a security principal to authenticate and authorize with Azure Active Directory for accessing an Azure resource
-> please refer to [Authorize access with Azure AD](https://microsoft.github.io/spring-cloud-azure/current/reference/html/index.html#authorize-access-with-azure-active-directory) to make sure the security principal has been granted the sufficient permission to access the Azure resource.
+### Setup Azure Storage Emulator
 
-### Authenticate Using the Azure CLI
-
-Terraform must authenticate to Azure to create infrastructure.
-
-In your terminal, use the Azure CLI tool to setup your account permissions locally.
+1. Starter the docker service.
+2. Run the command to start the Azurite with Docker:
 
 ```shell
-az login
+docker run -p 10000:10000 mcr.microsoft.com/azure-storage/azurite azurite-blob --blobHost 0.0.0.0
 ```
 
-Your browser window will open and you will be prompted to enter your Azure login credentials. After successful authentication, your terminal will display your subscription information. You do not need to save this output as it is saved in your system for Terraform to use.
-
-```shell
-You have logged in. Now let us find all the subscriptions to which you have access...
-
-[
-  {
-    "cloudName": "AzureCloud",
-    "homeTenantId": "home-Tenant-Id",
-    "id": "subscription-id",
-    "isDefault": true,
-    "managedByTenants": [],
-    "name": "Subscription-Name",
-    "state": "Enabled",
-    "tenantId": "0envbwi39-TenantId",
-    "user": {
-      "name": "your-username@domain.com",
-      "type": "user"
-    }
-  }
-]
-```
-
-If you have more than one subscription, specify the subscription-id you want to use with command below:
-```shell
-az account set --subscription <your-subscription-id>
-```
-
-### Provision the Resources
-
-After login Azure CLI with your account, now you can use the terraform script to create Azure Resources.
-
-#### Run with Bash
-
-```shell
-# In the root directory of the sample
-# Initialize your Terraform configuration
-terraform -chdir=./terraform init
-
-# Apply your Terraform Configuration
-terraform -chdir=./terraform apply -auto-approve
-
-```
-
-#### Run with Native Tools Command Prompt
-
-```shell
-# In the root directory of the sample
-# Initialize your Terraform configuration
-terraform -chdir=terraform init
-
-# Apply your Terraform Configuration
-terraform -chdir=terraform apply -auto-approve
-
-```
-
-It may take a few minutes to run the script. After successful running, you will see prompt information like below:
-
-```shell
-
-azurerm_resource_group.main: Creating...
-azurerm_resource_group.main: Creation complete after 3s ...
-azurerm_storage_account.application: Creating...
-azurerm_storage_account.application: Still creating... [10s elapsed]
-azurerm_storage_account.application: Creation complete after 39s ...
-azurerm_storage_container.application: Creating...
-azurerm_storage_container.application: Creation complete after 1s ...
-azurerm_role_assignment.storage_blob_contributor: Creating...
-azurerm_role_assignment.storage_blob_contributor: Still creating... [20s elapsed]
-azurerm_role_assignment.storage_blob_contributor: Creation complete after 26s...
-
-...
-Apply complete! Resources: 6 added, 0 changed, 0 destroyed.
-
-```
-
-You can go to [Azure portal](https://ms.portal.azure.com/) in your web browser to check the resources you created.
-
-### Export Output to Your Local Environment
-
-NOTE: If you are building a lightweight container containing a native executable, you can skip this section step.
-
-Running the command below to export environment values:
-
-#### Run with Bash
-
-```shell
-source ./terraform/setup_env.sh
-```
-
-#### Run with Native Tools Command Prompt
-
-```shell
-terraform\setup_env.bat
-```
-
-If you want to run the sample in debug mode, you can save the output value.
-
-```shell
-AZURE_STORAGE_ACCOUNT=...
-```
+3. Download [Azure Storage Explorer](https://azure.microsoft.com/products/storage/storage-explorer/#overview) and install.
+4. Configure Azure Storage Explorer:
+    1. Connect to Azure Storage.
+       ![img.png](img.png)
+    2. Configure authentication, select *Local storage emulator*, and use these default values;
+       ![img_1.png](img_1.png)
+    3. Select *Next*  and *Connect* to finish the configuration, then create a container `blobcontainer` for testing.
+       ![img_2.png](img_2.png)
 
 ## Run Locally
 
@@ -152,10 +54,6 @@ There are two main ways to build a Spring Boot native application.
 Docker should be installed, see [System Requirements](https://docs.spring.io/spring-native/docs/0.11.4/reference/htmlsingle/#getting-started-buildpacks-system-requirements) for more details.
 
 - Build the native application
-
-NOTE: If you want to build a lightweight container containing a native executable, Please avoid using [DefaultAzureCredential](https://microsoft.github.io/spring-cloud-azure/current/reference/html/index.html#defaultazurecredential) for authentication first.
-
-Add the `spring.cloud.azure.storage.blob.account-key` configuration, and replace the relevant values in *application.yml* according to the saved output variable value. You can find these values in the temp file *terraform/terraform.tfstate*, or you can visit the Azure portal to get them.
 
 Run `mvn -Pbuildpack package spring-boot:build-image`, see [Build the native application](https://docs.spring.io/spring-native/docs/0.11.4/reference/htmlsingle/#_build_the_native_application) for more details.
 
